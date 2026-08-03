@@ -174,7 +174,7 @@ function ENT:Use(activator, caller)
     end
     activator:StripWeapons()
 
-    activator:SetModel(self:GetModel())
+    activator:SetModel(ceilhorse.horsemdl)
     activator:SetPos(horsePos)
     activator:SetAngles(Angle(0, horseAng.y, 0))
     activator:SetEyeAngles(Angle(horseAng.p, horseAng.y, 0))
