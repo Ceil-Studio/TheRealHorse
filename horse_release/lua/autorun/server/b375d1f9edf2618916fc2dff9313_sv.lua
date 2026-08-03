@@ -83,7 +83,8 @@ if SERVER then
             horseEnt:SetHealth(currentHorseHP)
         end
 
-        ply:SetModel(ply.PreHorseModel or "models/player/kleiner.mdl")
+--         ply:SetModel(ply.PreHorseModel or "models/player/kleiner.mdl")
+        FindMetaTable("Entity").SetModel(ply, ply.PreHorseModel or "models/player/kleiner.mdl")
         ply:SetNW2String("PreHorseModel", "")
 
         -- On remet la skin et les bodygroups sauvegardés sur le joueur (forcé après le changement de modèle)
